@@ -29,7 +29,7 @@ embedding_model = OpenAIEmbeddings(
 
 vector_store = QdrantVectorStore.from_documents(
     documents=split_docs,
-    url="https://ominous-disco-j7xp9qj9q7p3qvg6-6333.app.github.dev/" or "http://localhost:6333",
+    url="http://localhost:6333",
     collection_name = "learning_vectors",
     embedding=embedding_model
 )
